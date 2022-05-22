@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.4rem;
+  padding-top: 8.8rem;
+  padding-bottom: 6.8rem;
+}
+
+/* HEADER */
+.header-container {
+  text-align: center;
+  color: #fff;
+}
+
+.header-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 3.6rem;
+  letter-spacing: -0.029rem;
+  margin-bottom: 1.6rem;
+}
+
+.header-body {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  margin-bottom: 6.4rem;
+}
+
+/* FORM */
+
+.try-free {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  letter-spacing: 0.027rem;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  padding: 1.6rem 6.6rem;
+  border-radius: 1rem;
+  margin-bottom: 2.4rem;
+}
+
+.try-free-span {
+  font-weight: 700;
+}
+
+form {
+  background-color: #fff;
+  padding: 2.4rem;
+  border-radius: 1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  letter-spacing: 0.025rem;
+  color: #3d3b48;
+  padding: 1.5rem 1.94rem;
+  border: 1px solid #dedede;
+  border-radius: 1rem;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  width: 100%;
+  background-color: #38cc8b;
+  color: white;
+  padding: 1.5rem 4.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+}
+
+.terms {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+  color: #bab7d4;
+  padding: 0 2rem;
+}
+
+.terms-span {
+  color: #ff7979;
+  font-weight: 700;
+}
