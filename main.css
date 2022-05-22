@@ -12,6 +12,8 @@ html {
 body {
   background-image: url("images/bg-intro-mobile.png");
   background-color: hsl(0, 100%, 74%);
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -20,6 +22,7 @@ body {
   padding: 0 2.4rem;
   padding-top: 8.8rem;
   padding-bottom: 6.8rem;
+  max-width: 65rem;
 }
 
 /* HEADER */
@@ -57,6 +60,7 @@ body {
   background-color: hsl(248, 32%, 49%);
   padding: 1.6rem 6.6rem;
   border-radius: 1rem;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
   margin-bottom: 2.4rem;
 }
 
@@ -68,6 +72,7 @@ form {
   background-color: #fff;
   padding: 2.4rem;
   border-radius: 1rem;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
 }
 
 input[type="text"] {
@@ -83,6 +88,10 @@ input[type="text"] {
   border-radius: 1rem;
 }
 
+input[type="text"]:focus {
+  outline: 1px solid #5e54a4;
+}
+
 input[type="submit"] {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -95,6 +104,7 @@ input[type="submit"] {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
   margin-bottom: 0.8rem;
 }
 
@@ -109,4 +119,35 @@ input[type="submit"] {
 .terms-span {
   color: #ff7979;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 111rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 4.5rem;
+    padding: 0;
+  }
+
+  .header-container {
+    text-align: left;
+  }
+
+  .header-title {
+    font-size: 5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.052rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .header-body {
+    margin: 0;
+  }
 }
