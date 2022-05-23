@@ -75,15 +75,21 @@ form {
   box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
 }
 
-input[type="text"] {
+.input-container {
+  position: relative;
   width: 100%;
   margin-bottom: 1.4rem;
+}
+
+input[type="text"] {
+  width: 100%;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 2.6rem;
   letter-spacing: 0.025rem;
   color: #3d3b48;
   padding: 1.5rem 1.94rem;
+  padding-right: 5rem;
   border: 1px solid #dedede;
   border-radius: 1rem;
 }
@@ -121,6 +127,25 @@ input[type="submit"] {
   font-weight: 700;
 }
 
+/* Error msg */
+
+[name="alert-circle"] {
+  position: absolute;
+  font-size: 2.4rem;
+  color: #ff7979;
+  top: 18px;
+  right: 20px;
+  display: none;
+}
+.error {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ff7979;
+  text-align: right;
+  margin-top: 0.6rem;
+  display: none;
+}
+
 @media only screen and (min-width: 1200px) {
   body {
     width: 100vw;
@@ -138,6 +163,7 @@ input[type="submit"] {
 
   .header-container {
     text-align: left;
+    width: 52.5rem;
   }
 
   .header-title {
